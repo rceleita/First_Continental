@@ -1,0 +1,89 @@
+/*
+Theme Name: 	First Continental Investment Co., Ltd.
+Description: 	Custom WordPress Theme for First Continental Investment Co., Ltd.
+Author: 		John Manlove Marketing & Communications
+Author URI: 	http://johnmanlove.com
+Template:		responsive
+Version: 1.0.0
+*/
+/* ==========================================
+GENERAL STYLES
+========================================== */
+* {
+  box-sizing: border-box;
+  color: black;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important; }
+
+body {
+  background: white; }
+
+/* ==========================================
+BODY ELEMENTS STYLES
+========================================== */
+#container, #footer {
+  max-width: 1024px; }
+
+#header {
+  background: #FECB3D; }
+
+#wrapper {
+  border: 0 none;
+  border-radius: 0;
+  margin-top: 123px; }
+  #wrapper #content-full {
+    margin-top: 0; }
+
+/* ===================================================================================
+NAVIGATION STYLES
+=================================================================================== */
+.menu {
+  background: transparent;
+  background-color: transparent;
+  background-image: none;
+  filter: none; }
+  .menu li a, .menu .current_page_item a, .menu .current-menu-item a {
+    background-color: transparent;
+    color: black;
+    font-weight: normal;
+    text-shadow: none; }
+    .menu li a:hover, .menu .current_page_item a:hover, .menu .current-menu-item a:hover {
+      background: transparent !important;
+      background-color: transparent !important;
+      background-image: none !important; }
+  .menu li:hover, .menu .current_page_item:hover, .menu .current-menu-item:hover {
+    background-color: transparent !important; }
+
+/* ===================================================================================
+LAYOUT STYLES
+=================================================================================== */
+#container {
+  padding: 0;
+  max-width: 1024px; }
+  #container .skip-container {
+    padding: 0 .5em 0 0; }
+  #container #header {
+    border-bottom: 2px solid black;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 900; }
+    #container #header .head-container {
+      margin: 0 auto;
+      padding: 30px 70px;
+      width: 1024px; }
+      #container #header .head-container #logo a img {
+        width: 75%; }
+      #container #header .head-container .main-nav {
+        clear: none;
+        float: right; }
+  #container #content-full .post-entry .rev_slider_wrapper .slide-text-white {
+    color: white !important; }
+
+/* ===================================================================================
+MISC STYLES
+=================================================================================== */
+.personnel .tparrows:before {
+  color: black; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,171 @@
+/*
+Theme Name: 	First Continental Investment Co., Ltd.
+Description: 	Custom WordPress Theme for First Continental Investment Co., Ltd.
+Author: 		John Manlove Marketing & Communications
+Author URI: 	http://johnmanlove.com
+Template:		responsive
+Version: 1.0.0
+*/
+
+// MIXINS
+
+
+
+// VARIABLES
+
+//colors
+$text-color: black;
+$yellow: #FECB3D;
+
+//fonts
+$font-stack: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+//sizing
+$max-width: 1024px;
+
+/* ==========================================
+GENERAL STYLES
+========================================== */
+
+* {
+    box-sizing: border-box;
+    color: $text-color;
+    font-family: $font-stack !important;
+}
+
+body {
+	background: white;
+}
+
+
+
+/* ==========================================
+BODY ELEMENTS STYLES
+========================================== */
+
+#container, #footer {
+	max-width: $max-width;
+}
+
+#header {
+	background: $yellow;
+}
+
+#wrapper {
+	border: 0 none;
+	border-radius: 0;
+	margin-top: 123px;
+
+	#content-full {
+		margin-top: 0;
+	}
+}
+
+
+/* ===================================================================================
+NAVIGATION STYLES
+=================================================================================== */
+
+.menu {
+	background: transparent;
+	background-color: transparent;
+	background-image: none;
+	filter: none;
+
+	li, .current_page_item, .current-menu-item {
+
+		a {
+			background-color: transparent;
+			color: $text-color;
+			font-weight: normal;
+			text-shadow: none;
+
+			&:hover {
+				background: transparent !important;
+				background-color: transparent !important;
+				background-image: none !important;
+			}
+		}
+
+		&:hover {
+			background-color: transparent !important;
+		}
+	}
+
+}
+
+/* ===================================================================================
+LAYOUT STYLES
+=================================================================================== */
+
+#container {
+	padding: 0;
+	max-width: $max-width;
+
+	.skip-container {
+		padding: 0 .5em 0 0;
+	}
+
+	#header {
+		border-bottom: 2px solid black;
+		left: 0;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 900;
+
+		.head-container {
+			margin: 0 auto;
+			padding: 30px 70px;
+			width: $max-width;
+
+			#logo {
+
+				a {
+
+					img {
+						width: 75%;
+					}
+				}
+			}
+
+			.main-nav {
+				clear: none;
+				float: right;
+			}
+		}
+	}
+
+	#content-full {
+
+		.post-entry {
+
+			.rev_slider_wrapper {
+
+				.slide-text-white {
+					color: white !important;
+				}
+			}
+		}
+	}
+}
+
+
+/* ===================================================================================
+MISC STYLES
+=================================================================================== */
+
+.personnel {
+
+	.tparrows:before {
+		color: black;
+	}
+}
+
+
+
+
+
+
+
+
