@@ -59,17 +59,13 @@ $responsive_options = responsive_get_options();
 		</div><!-- end of col-940 -->
 		<?php get_sidebar( 'colophon' ); ?>
 
-		<div class="grid col-300 copyright">
+		<div class="grid col-460 copyright">
 			Copyright <?php esc_attr_e( '&copy;', 'responsive' ); ?> <?php echo date( 'Y' ); ?><a href="<?php echo home_url( '/' ) ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
 				<?php bloginfo( 'name' ); ?>
 			</a>. All Rights Reserved.
 		</div><!-- end of .copyright -->
 
-		<div class="grid col-300 scroll-top"><a href="#scroll-top" title="<?php esc_attr_e( 'scroll to top', 'responsive' ); ?>"><?php _e( '&uarr;', 'responsive' ); ?></a></div>
-
-		<div class="grid col-300 fit powered">
-			
-		</div><!-- end .powered -->
+		<div class="grid col-300 scroll-top"><a href="#scroll-top" title="<?php esc_attr_e( 'scroll to top', 'responsive' ); ?>"><?php _e( '&#8682;', 'responsive' ); ?></a></div>
 
 	</div><!-- end #footer-wrapper -->
 
