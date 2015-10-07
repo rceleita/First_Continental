@@ -1220,7 +1220,7 @@ function wp_page_menu( $args = array() ) {
 	$list_args = $args;
 
 	// Show Home in the menu
-	if ( ! empty($args['show_home']) ) {
+	/*if ( ! empty($args['show_home']) ) {
 		if ( true === $args['show_home'] || '1' === $args['show_home'] || 1 === $args['show_home'] )
 			$text = __('Home');
 		else
@@ -1238,7 +1238,7 @@ function wp_page_menu( $args = array() ) {
 			}
 			$list_args['exclude'] .= get_option('page_on_front');
 		}
-	}
+	}*/
 
 	$list_args['echo'] = false;
 	$list_args['title_li'] = '';

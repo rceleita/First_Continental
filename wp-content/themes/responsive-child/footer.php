@@ -65,7 +65,7 @@ $responsive_options = responsive_get_options();
 			</a>. All Rights Reserved.
 		</div><!-- end of .copyright -->
 
-		<div class="grid col-300 scroll-top"><a href="#scroll-top" title="<?php esc_attr_e( 'scroll to top', 'responsive' ); ?>"><?php _e( '&#8682;', 'responsive' ); ?></a></div>
+		<div class="grid col-300 scroll-top"><a href="#container" title="<?php esc_attr_e( 'scroll to top', 'responsive' ); ?>"><?php _e( '&#8682;', 'responsive' ); ?></a></div>
 
 	</div><!-- end #footer-wrapper -->
 
