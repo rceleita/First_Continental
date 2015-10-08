@@ -17,7 +17,7 @@ GENERAL STYLES
   outline: 0; }
 
 body {
-  background-color: white; }
+  background: #eee; }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 100;
@@ -48,6 +48,7 @@ BODY ELEMENTS STYLES
 #wrapper {
   border: 0 none;
   border-radius: 0;
+  box-shadow: 0 0 20px #333;
   margin-top: 123px;
   padding-left: 0 !important;
   padding-right: 0 !important; }
@@ -161,6 +162,7 @@ LAYOUT STYLES
     #container #content-full .post-entry .programs .su-tabs-vertical {
       margin-bottom: 0 !important; }
       #container #content-full .post-entry .programs .su-tabs-vertical .su-tabs-nav {
+        float: right !important;
         margin-right: 30px;
         margin-top: -230px; }
         #container #content-full .post-entry .programs .su-tabs-vertical .su-tabs-nav span {
@@ -185,7 +187,16 @@ LAYOUT STYLES
       #container #content-full .post-entry .programs .su-tabs-vertical .su-tabs-panes {
         background-color: #FECB3D;
         padding: 40px;
+        position: relative;
         text-align: center; }
+        #container #content-full .post-entry .programs .su-tabs-vertical .su-tabs-panes::before {
+          content: "";
+          border-top: 20px solid white;
+          border-left: 30px solid transparent;
+          border-right: 30px solid transparent;
+          position: absolute;
+          right: 180px;
+          top: 0; }
         #container #content-full .post-entry .programs .su-tabs-vertical .su-tabs-panes .su-tabs-pane {
           border-bottom: 1px solid black;
           border-top: 1px solid black;
@@ -229,6 +240,126 @@ LAYOUT STYLES
     #container #content-full .post-entry .process h3 {
       border-left: 2px solid #FECB3D;
       padding-left: 20px; }
+    #container #content-full .post-entry .process p {
+      background-position: 50% 0;
+      min-height: 50px;
+      padding-left: 100px; }
+      #container #content-full .post-entry .process p.phone {
+        background: url("/First_Continental/wp-content/uploads/2015/10/bg_phone.png") 0 0 no-repeat; }
+      #container #content-full .post-entry .process p.loi {
+        background: url("/First_Continental/wp-content/uploads/2015/10/bg_loi.png") 0 0 no-repeat; }
+      #container #content-full .post-entry .process p.loan {
+        background: url("/First_Continental/wp-content/uploads/2015/10/bg_loan.png") 0 0 no-repeat; }
+  #container #content-full .post-entry .projects {
+    background-color: #222;
+    margin-bottom: 0 !important; }
+  #container #content-full .post-entry #projects {
+    background: url("/First_Continental/wp-content/uploads/2015/10/bg_projects.png") 0 0 no-repeat;
+    background-size: 100%;
+    margin: 70px 40px 0; }
+    #container #content-full .post-entry #projects h1 {
+      color: #FECB3D;
+      margin-top: -20px; }
+    #container #content-full .post-entry #projects .su-tabs {
+      margin-bottom: 0 !important;
+      margin-top: 420px; }
+      #container #content-full .post-entry #projects .su-tabs .su-tabs-nav span {
+        border-radius: 0;
+        color: #FECB3D;
+        font-family: "Times New Roman", serif; }
+        #container #content-full .post-entry #projects .su-tabs .su-tabs-nav span:hover, #container #content-full .post-entry #projects .su-tabs .su-tabs-nav span.su-tabs-current {
+          background: none !important; }
+          #container #content-full .post-entry #projects .su-tabs .su-tabs-nav span:hover::before, #container #content-full .post-entry #projects .su-tabs .su-tabs-nav span.su-tabs-current::before {
+            background-color: #FECB3D;
+            border-radius: 10px;
+            color: black;
+            content: '✓';
+            display: block;
+            height: 20px;
+            margin-left: -30px;
+            position: absolute;
+            text-align: center;
+            width: 20px; }
+      #container #content-full .post-entry #projects .su-tabs .su-tabs-panes {
+        background-color: #fff;
+        clear: both;
+        margin-left: -40px;
+        max-height: 400px;
+        overflow: scroll;
+        width: 1024px !important; }
+        #container #content-full .post-entry #projects .su-tabs .su-tabs-panes .su-tabs-pane {
+          padding: 0; }
+          #container #content-full .post-entry #projects .su-tabs .su-tabs-panes .su-tabs-pane table {
+            border: 0 none;
+            margin: 0; }
+            #container #content-full .post-entry #projects .su-tabs .su-tabs-panes .su-tabs-pane table th, #container #content-full .post-entry #projects .su-tabs .su-tabs-panes .su-tabs-pane table td {
+              border: 0 none;
+              padding: 5px; }
+              #container #content-full .post-entry #projects .su-tabs .su-tabs-panes .su-tabs-pane table th:first-of-type, #container #content-full .post-entry #projects .su-tabs .su-tabs-panes .su-tabs-pane table th:last-child, #container #content-full .post-entry #projects .su-tabs .su-tabs-panes .su-tabs-pane table td:first-of-type, #container #content-full .post-entry #projects .su-tabs .su-tabs-panes .su-tabs-pane table td:last-child {
+                padding-left: 40px;
+                padding-right: 40px; }
+            #container #content-full .post-entry #projects .su-tabs .su-tabs-panes .su-tabs-pane table th {
+              background: #FECB3D;
+              padding: 10px 5px;
+              text-align: left; }
+            #container #content-full .post-entry #projects .su-tabs .su-tabs-panes .su-tabs-pane table td {
+              border-bottom: 1px solid black; }
+  #container #content-full .post-entry .contact {
+    background: #FECB3D;
+    border-bottom: 2px solid white;
+    border-top: 7px solid #FECB3D;
+    margin-bottom: 0; }
+    #container #content-full .post-entry .contact .contact-info {
+      padding: 40px; }
+      #container #content-full .post-entry .contact .contact-info span {
+        border-bottom: 1px solid black;
+        display: block;
+        font-weight: 500; }
+    #container #content-full .post-entry .contact .contact-form {
+      background: #fff;
+      padding: 40px; }
+      #container #content-full .post-entry .contact .contact-form form, #container #content-full .post-entry .contact .contact-form p {
+        font-size: .95em; }
+      #container #content-full .post-entry .contact .contact-form p {
+        margin: 5px 0; }
+      #container #content-full .post-entry .contact .contact-form form {
+        margin-bottom: 0 !important; }
+        #container #content-full .post-entry .contact .contact-form form .company-info p {
+          float: left;
+          width: 48%; }
+          #container #content-full .post-entry .contact .contact-form form .company-info p:first-of-type {
+            margin-right: 4%; }
+        #container #content-full .post-entry .contact .contact-form form .city-state .city > span {
+          display: block;
+          float: left;
+          margin-right: 7%;
+          width: 28.6%; }
+          #container #content-full .post-entry .contact .contact-form form .city-state .city > span:last-child {
+            margin-right: 0; }
+        #container #content-full .post-entry .contact .contact-form form input[type="text"], #container #content-full .post-entry .contact .contact-form form input[type="email"], #container #content-full .post-entry .contact .contact-form form input[type="tel"], #container #content-full .post-entry .contact .contact-form form textarea {
+          border: 1px solid black;
+          border-radius: 0;
+          box-shadow: none;
+          color: #888;
+          font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+          outline: 0;
+          padding: 2px 10px;
+          width: 100%; }
+        #container #content-full .post-entry .contact .contact-form form input[type="checkbox"] {
+          border: 1px solid black;
+          border-radius: 0;
+          box-shadow: none; }
+        #container #content-full .post-entry .contact .contact-form form select {
+          -webkit-appearance: none;
+          appearance: none;
+          border: 1px solid black;
+          border-radius: 0 !important;
+          box-shadow: none;
+          display: block;
+          margin-top: 1px;
+          padding: 2px 10px;
+          position: relative;
+          width: 100%; }
 
 /* ===================================================================================
 MISC STYLES
@@ -241,8 +372,6 @@ MISC STYLES
   border-radius: 0 !important;
   padding: 0 !important; }
 
-.su-tabs-vertical .su-tabs-nav {
-  float: right !important; }
 .su-tabs-vertical .su-tabs-panes {
   float: none !important;
   width: 100% !important; }
