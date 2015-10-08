@@ -17,10 +17,7 @@ GENERAL STYLES
   outline: 0; }
 
 body {
-  background-color: #FECB3D;
-  background-size: 58px 58px;
-  background-position: 0px 2px, 4px 35px, 29px 31px, 33px 6px, 0px 36px, 4px 2px, 29px 6px, 33px 30px;
-  background-image: linear-gradient(335deg, #6e5101 23px, transparent 23px), linear-gradient(155deg, #6e5101 23px, transparent 23px), linear-gradient(335deg, #6e5101 23px, transparent 23px), linear-gradient(155deg, #6e5101 23px, transparent 23px), linear-gradient(335deg, #6e5101 10px, transparent 10px), linear-gradient(155deg, #6e5101 10px, transparent 10px), linear-gradient(335deg, #6e5101 10px, transparent 10px), linear-gradient(155deg, #6e5101 10px, transparent 10px); }
+  background-color: white; }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 100;
@@ -147,7 +144,8 @@ LAYOUT STYLES
     #container #content-full .post-entry .company-history p {
       border-left: 3px solid black; }
   #container #content-full .post-entry .programs {
-    padding: 40px 0; }
+    margin-bottom: 0;
+    padding: 40px 0 0; }
     #container #content-full .post-entry .programs h1, #container #content-full .post-entry .programs h3 {
       margin-left: 100px;
       margin-right: 100px;
@@ -160,38 +158,77 @@ LAYOUT STYLES
         padding-left: 60px;
         text-align: justify;
         width: 60%; }
-    #container #content-full .post-entry .programs .su-tabs-vertical .su-tabs-nav {
-      margin-top: -230px; }
-      #container #content-full .post-entry .programs .su-tabs-vertical .su-tabs-nav span {
-        border-bottom: 2px solid black;
-        border-radius: 0;
-        font-size: 1.1em;
-        font-weight: 500;
-        padding-top: 30px;
-        text-transform: uppercase; }
-        #container #content-full .post-entry .programs .su-tabs-vertical .su-tabs-nav span:hover, #container #content-full .post-entry .programs .su-tabs-vertical .su-tabs-nav span.su-tabs-current {
-          background: none !important; }
-          #container #content-full .post-entry .programs .su-tabs-vertical .su-tabs-nav span:hover::before, #container #content-full .post-entry .programs .su-tabs-vertical .su-tabs-nav span.su-tabs-current::before {
-            background-color: #FECB3D;
-            border-radius: 10px;
-            content: '✓';
-            display: block;
-            height: 20px;
-            margin-left: -30px;
-            position: absolute;
-            text-align: center;
-            width: 20px; }
-    #container #content-full .post-entry .programs .su-tabs-vertical .su-tabs-panes {
-      background-color: #FECB3D;
-      padding: 40px;
-      text-align: center; }
-      #container #content-full .post-entry .programs .su-tabs-vertical .su-tabs-panes .su-tabs-pane {
-        border-bottom: 1px solid black;
-        border-top: 1px solid black;
-        padding: 20px 50px; }
-        #container #content-full .post-entry .programs .su-tabs-vertical .su-tabs-panes .su-tabs-pane h4 {
+    #container #content-full .post-entry .programs .su-tabs-vertical {
+      margin-bottom: 0 !important; }
+      #container #content-full .post-entry .programs .su-tabs-vertical .su-tabs-nav {
+        margin-right: 30px;
+        margin-top: -230px; }
+        #container #content-full .post-entry .programs .su-tabs-vertical .su-tabs-nav span {
+          border-bottom: 2px solid black;
+          border-radius: 0;
+          font-size: 1.1em;
           font-weight: 500;
+          padding-top: 30px;
           text-transform: uppercase; }
+          #container #content-full .post-entry .programs .su-tabs-vertical .su-tabs-nav span:hover, #container #content-full .post-entry .programs .su-tabs-vertical .su-tabs-nav span.su-tabs-current {
+            background: none !important; }
+            #container #content-full .post-entry .programs .su-tabs-vertical .su-tabs-nav span:hover::before, #container #content-full .post-entry .programs .su-tabs-vertical .su-tabs-nav span.su-tabs-current::before {
+              background-color: #FECB3D;
+              border-radius: 10px;
+              content: '✓';
+              display: block;
+              height: 20px;
+              margin-left: -30px;
+              position: absolute;
+              text-align: center;
+              width: 20px; }
+      #container #content-full .post-entry .programs .su-tabs-vertical .su-tabs-panes {
+        background-color: #FECB3D;
+        padding: 40px;
+        text-align: center; }
+        #container #content-full .post-entry .programs .su-tabs-vertical .su-tabs-panes .su-tabs-pane {
+          border-bottom: 1px solid black;
+          border-top: 1px solid black;
+          padding: 20px 50px; }
+          #container #content-full .post-entry .programs .su-tabs-vertical .su-tabs-panes .su-tabs-pane h4 {
+            font-weight: 500;
+            text-transform: uppercase; }
+  #container #content-full .post-entry .testimonials {
+    background: black;
+    padding: 40px 0; }
+    #container #content-full .post-entry .testimonials h1, #container #content-full .post-entry .testimonials p {
+      color: white; }
+    #container #content-full .post-entry .testimonials h1 {
+      border-bottom: 1px solid white;
+      padding: 0 100px 15px; }
+    #container #content-full .post-entry .testimonials p {
+      font-family: "Times New Roman", serif !important;
+      font-size: 1.3em;
+      font-style: italic;
+      margin-left: 80px;
+      padding-right: 100px; }
+      #container #content-full .post-entry .testimonials p.testimonial {
+        border-left: 1px solid #FECB3D;
+        padding-left: 20px; }
+      #container #content-full .post-entry .testimonials p:first-of-type {
+        border-top: 0 none; }
+      #container #content-full .post-entry .testimonials p.testimonial-credit {
+        padding-left: 20px; }
+        #container #content-full .post-entry .testimonials p.testimonial-credit span {
+          color: #FECB3D; }
+    #container #content-full .post-entry .testimonials hr {
+      background: #FECB3D;
+      color: #FECB3D; }
+  #container #content-full .post-entry .process {
+    padding: 50px 100px 50px 40px; }
+    #container #content-full .post-entry .process h1, #container #content-full .post-entry .process h3 {
+      color: #FECB3D;
+      margin-left: 80px; }
+    #container #content-full .post-entry .process h1 {
+      padding-left: 20px; }
+    #container #content-full .post-entry .process h3 {
+      border-left: 2px solid #FECB3D;
+      padding-left: 20px; }
 
 /* ===================================================================================
 MISC STYLES
