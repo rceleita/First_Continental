@@ -88,12 +88,19 @@ BODY ELEMENTS STYLES
 	border: 0 none;
 	border-radius: 0;
 	box-shadow: 0 0 20px #333;
+	margin-bottom: 0;
 	margin-top: 123px;
+	padding-bottom: 0;
 	padding-left: 0 !important;
 	padding-right: 0 !important;
 
 	#content-full {
+		margin-bottom: 0;
 		margin-top: 0;
+
+		.post-edit {
+			display: none;
+		}
 	}
 }
 
@@ -518,6 +525,10 @@ LAYOUT STYLES
 
 					p {
 						margin: 5px 0;
+
+						&.submit {
+							float: right;
+						}
 					}
 
 					form {
@@ -578,6 +589,64 @@ LAYOUT STYLES
 							position: relative;
 							width: 100%;
 						}
+
+						input[type="submit"] {
+							border: 0 none;
+							border-radius: 0;
+							background: black;
+							font-family: $serif-font-stack !important;
+							font-size: 1.5em;
+							color: $yellow;
+							opacity: 1;
+							transition: opacity .3s;
+							padding: 10px 30px;
+							text-shadow: none;
+
+							&:hover, &:active, &:focus {
+								opacity: .7;
+							}
+						}
+					}
+				}
+			}
+
+			.footer-image {
+				margin-bottom: 0;
+
+				img {
+					margin-bottom: 0;
+				}
+			}
+
+			.footer-contact {
+				background-color: #222;
+				color: $yellow;
+				margin-bottom: 0;
+				padding: 40px;
+
+				h3, p {
+					color: $yellow;
+				}
+
+				.footer-logo {
+					@include bg-img(footer, png, no-repeat);
+					background-size: 120px;
+					padding-left: 140px;
+
+					p {
+						font-size: 1em;
+					}
+				}
+
+				.integrity {
+					text-align: right;
+
+					h3, p {
+						font-family: $serif-font-stack !important;
+					}
+
+					p {
+						margin: 5px 0;
 					}
 				}
 			}
@@ -619,6 +688,13 @@ MISC STYLES
 	}
 }
 
+/* ===================================================================================
+FOOTER STYLES
+=================================================================================== */
+#footer {
+	background: $yellow;
+	box-shadow: 0 0 20px #333;;
+}
 
 
 

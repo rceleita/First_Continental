@@ -49,11 +49,16 @@ BODY ELEMENTS STYLES
   border: 0 none;
   border-radius: 0;
   box-shadow: 0 0 20px #333;
+  margin-bottom: 0;
   margin-top: 123px;
+  padding-bottom: 0;
   padding-left: 0 !important;
   padding-right: 0 !important; }
   #wrapper #content-full {
+    margin-bottom: 0;
     margin-top: 0; }
+    #wrapper #content-full .post-edit {
+      display: none; }
 
 /* ===================================================================================
 NAVIGATION STYLES
@@ -322,6 +327,8 @@ LAYOUT STYLES
         font-size: .95em; }
       #container #content-full .post-entry .contact .contact-form p {
         margin: 5px 0; }
+        #container #content-full .post-entry .contact .contact-form p.submit {
+          float: right; }
       #container #content-full .post-entry .contact .contact-form form {
         margin-bottom: 0 !important; }
         #container #content-full .post-entry .contact .contact-form form .company-info p {
@@ -360,6 +367,42 @@ LAYOUT STYLES
           padding: 2px 10px;
           position: relative;
           width: 100%; }
+        #container #content-full .post-entry .contact .contact-form form input[type="submit"] {
+          border: 0 none;
+          border-radius: 0;
+          background: black;
+          font-family: "Times New Roman", serif !important;
+          font-size: 1.5em;
+          color: #FECB3D;
+          opacity: 1;
+          transition: opacity .3s;
+          padding: 10px 30px;
+          text-shadow: none; }
+          #container #content-full .post-entry .contact .contact-form form input[type="submit"]:hover, #container #content-full .post-entry .contact .contact-form form input[type="submit"]:active, #container #content-full .post-entry .contact .contact-form form input[type="submit"]:focus {
+            opacity: .7; }
+  #container #content-full .post-entry .footer-image {
+    margin-bottom: 0; }
+    #container #content-full .post-entry .footer-image img {
+      margin-bottom: 0; }
+  #container #content-full .post-entry .footer-contact {
+    background-color: #222;
+    color: #FECB3D;
+    margin-bottom: 0;
+    padding: 40px; }
+    #container #content-full .post-entry .footer-contact h3, #container #content-full .post-entry .footer-contact p {
+      color: #FECB3D; }
+    #container #content-full .post-entry .footer-contact .footer-logo {
+      background: url("/First_Continental/wp-content/uploads/2015/10/bg_footer.png") 0 0 no-repeat;
+      background-size: 120px;
+      padding-left: 140px; }
+      #container #content-full .post-entry .footer-contact .footer-logo p {
+        font-size: 1em; }
+    #container #content-full .post-entry .footer-contact .integrity {
+      text-align: right; }
+      #container #content-full .post-entry .footer-contact .integrity h3, #container #content-full .post-entry .footer-contact .integrity p {
+        font-family: "Times New Roman", serif !important; }
+      #container #content-full .post-entry .footer-contact .integrity p {
+        margin: 5px 0; }
 
 /* ===================================================================================
 MISC STYLES
@@ -377,5 +420,12 @@ MISC STYLES
   width: 100% !important; }
   .su-tabs-vertical .su-tabs-panes .su-tabs-pane {
     background-color: transparent !important; }
+
+/* ===================================================================================
+FOOTER STYLES
+=================================================================================== */
+#footer {
+  background: #FECB3D;
+  box-shadow: 0 0 20px #333; }
 
 /*# sourceMappingURL=style.css.map */
